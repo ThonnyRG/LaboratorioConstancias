@@ -18,6 +18,7 @@ public class ProfessorDAO {
         Connection connection = databaseManager.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(query);
 
+        
         preparedStatement.setString(1, username);
         ResultSet resultSet = preparedStatement.executeQuery();
         int id = 0;

@@ -25,6 +25,7 @@ public class SignatureDAO {
     }
     
     public String getSignature() throws SQLException{
+        String query = "Select";
         String signature = "";
         String query = "SELECT firma FROM Firmas";
         PreparedStatement statement = dbm.getConnection().prepareStatement(query);
