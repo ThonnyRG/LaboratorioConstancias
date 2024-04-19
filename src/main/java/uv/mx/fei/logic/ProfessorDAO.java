@@ -10,6 +10,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.controlsfx.control.tableview2.filter.filtereditor.SouthFilter;
+
+
 public class ProfessorDAO {
 
     public int getProfessorIdByUsername(String username) throws SQLException {
@@ -28,6 +31,10 @@ public class ProfessorDAO {
         databaseManager.closeConnection();
 
         return id;
+    }
+
+    void HolaMundo() {
+        System.out.println("Hola Mundo");
     }
 
     public User getProfessorIdNameByPersonalNum(int numPersonal) throws SQLException {
