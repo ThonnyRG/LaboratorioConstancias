@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="1024.0" prefHeight="640.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uv.mx.fei.gui.LoginController">
+    <children>
+        <HBox alignment="CENTER_LEFT" minHeight="60.0" prefHeight="60.0" style="-fx-background-color: #003466;" VBox.vgrow="NEVER">
+            <children>
+                <Label text="Iniciar Sesion" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+        </HBox>
+        <GridPane prefHeight="361.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+            <columnConstraints>
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="328.0" minWidth="120.0" prefWidth="202.0" />
+                <ColumnConstraints hgrow="NEVER" maxWidth="214.0" minWidth="38.0" prefWidth="149.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="471.0" minWidth="260.0" prefWidth="355.0" />
+                <ColumnConstraints hgrow="ALWAYS" maxWidth="318.0" minWidth="120.0" prefWidth="318.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="176.0" minHeight="40.0" prefHeight="176.0" vgrow="ALWAYS" />
+                <RowConstraints maxHeight="222.0" minHeight="19.333525343413" prefHeight="131.0" vgrow="NEVER" />
+                <RowConstraints maxHeight="194.0" minHeight="42.000265760893456" prefHeight="118.0" vgrow="NEVER" />
+                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="151.0" vgrow="ALWAYS" />
+            </rowConstraints>
+            <children>
+                <Label text="Usuario:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </Label>
+                <Label text="Contraseña:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+                <TextField fx:id="textFieldUser" maxWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="5.0" />
+                    </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </TextField>
+                <PasswordField fx:id="textFieldPassword" maxWidth="200.0" onAction="#onActionButtonContinue" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="5.0" />
+                    </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+                </PasswordField>
+                <Button mnemonicParsing="false" onAction="#onActionButtonContinue" text="Iniciar Sesión" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <GridPane.margin>
+                        <Insets />
+                    </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            <Label text="Sistema de generación de constancias" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            </children>
+        </GridPane>
+    </children>
+</VBox>
